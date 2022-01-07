@@ -48,7 +48,7 @@ You will need local Administrator access for live analysis.
     Analysis Type (Specify one):
         -AnalyzeNTLM_UsageBasic : Returns basic NTLM usage based on the NTLM Operational log
         -AnalyzeNTLM_UsageDetailed : Returns detailed NTLM usage based on the NTLM Operational log
-        -EventID_Statistics : Output event ID statistics
+        -SecurityEventID_Statistics : Output event ID statistics
         -LogonTimeline : Output a condensed timeline of user logons based on the Security log
         -SecurityAuthenticationSummary : Output a summary of authentication events for each logon type based on the Security log
 
@@ -83,7 +83,7 @@ You will need local Administrator access for live analysis.
 
 ### Show event ID statistics to get a grasp of what kind of events there are:
 ```powershell
-./WELA.ps1 -LogFile .\Security.evtx -EventIDStatistics
+./WELA.ps1 -LogFile .\Security.evtx -SecurityEventID_Statistics
 ```
 
 ### Create a timeline via offline analysis outputted to a GUI in UTC time:
